@@ -37,10 +37,5 @@ The model is trained using the **Pascal VOC 2012** dataset, which includes 1,464
 1. Download the Pascal VOC 2012 dataset from the official site and place it in the `data/` folder.
 2. Train the model:
     ```bash
-    python train.py --dataset ./data/VOCdevkit/VOC2012 --epochs 50 --batch-size 16
+    python process.ipynb --dataset ./data/VOCdevkit/VOC2012 --epochs 50 --batch-size 16
     ```
-
-### Inference
-To run inference on a custom image:
-```bash
-python infer.py --image-path [image.jpg] --weights [weights.pth]
